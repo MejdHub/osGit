@@ -40,11 +40,8 @@ success:
 
 mov bl, [txtprint + 0x7c00]
 jmp print
-cmp cx, dx
-jle pitx
-
-cmp cx, dx
-jg success
+jmp pitx
+jmp success
 
 times 510-($-$$) db 0
 db 0x55, 0xaa
