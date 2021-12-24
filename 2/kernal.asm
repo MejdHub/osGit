@@ -32,5 +32,5 @@ section .text
     nullfill:
         mov [ecx], ax
         times 2 inc ecx
-    times 791 jmp nullfill 
+    times 791 jmp nullfill ;fills the other boxes w/ blue
     jmp $
