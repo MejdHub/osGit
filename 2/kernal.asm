@@ -27,9 +27,10 @@ section .text
 
     mov ecx, 0xb8016
     
+    mov al, 0
+
     nullfill:
         mov [ecx], ax
         times 2 inc ecx
-    mov al, 0
-    times 800 jmp nullfill 
+    times 791 jmp nullfill 
     jmp $
